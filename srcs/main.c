@@ -6,7 +6,7 @@
 /*   By: schouite <schouite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 17:38:17 by schouite          #+#    #+#             */
-/*   Updated: 2026/02/07 19:28:18 by schouite         ###   ########.fr       */
+/*   Updated: 2026/02/08 19:04:40 by schouite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	main(int argc, char **argv)
 	if (!arg)
 		return (1);
 	if (argc < 2)
-		return (1);
+		return (free(arg), 1);
 	if (!check(argc, argv, arg))
 		return (free(arg), print_error(), 1);
 	if (is_sorted(argc, arg))
