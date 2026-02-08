@@ -6,16 +6,16 @@
 /*   By: schouite <schouite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 18:39:15 by schouite          #+#    #+#             */
-/*   Updated: 2026/02/03 17:48:34 by schouite         ###   ########.fr       */
+/*   Updated: 2026/02/08 18:40:35 by schouite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
+# include "ft_printf.h"
 # include "get_next_line.h"
 # include "libft.h"
-# include "ft_printf.h"
 # include <limits.h>
 # include <stdbool.h>
 # include <stdlib.h>
@@ -84,4 +84,5 @@ void				algo(t_node **stack_a);
 t_node				*ft_lstlast(t_node *lst);
 void				ft_lstclr(t_node **lst);
 bool				is_sorted(int argc, int *arg);
+bool				is_it_valid_int(char *str);
 #endif

@@ -6,7 +6,7 @@
 /*   By: schouite <schouite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 19:59:39 by schouite          #+#    #+#             */
-/*   Updated: 2026/01/23 18:14:28 by schouite         ###   ########.fr       */
+/*   Updated: 2026/02/08 18:39:50 by schouite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ t_parse	ft_atoi(char *str)
 	}
 	else if (str[i] == '+')
 		i++;
-	if (!is_digit(str[i]))
+	if (!is_it_valid_int(&str[i]))
 	{
 		result.value = 0;
 		result.error = 1;

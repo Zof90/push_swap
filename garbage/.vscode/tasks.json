@@ -1,0 +1,50 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build push_swap",
+            "type": "shell",
+            "command": "make",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile push_swap with Makefile"
+        },
+        {
+            "label": "build checker",
+            "type": "shell",
+            "command": "make",
+            "args": ["bonus"],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile checker (bonus) with Makefile"
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "fclean",
+            "type": "shell",
+            "command": "make",
+            "args": ["fclean"],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "re",
+            "type": "shell",
+            "command": "make",
+            "args": ["re"],
+            "group": "build",
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
